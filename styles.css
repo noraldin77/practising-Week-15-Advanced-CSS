@@ -1,0 +1,140 @@
+.spinner{
+margin: 100px auto;
+border: 16px solid red;
+width: 120px;
+height: 120px;
+border-top-color: blue;
+border-bottom-color: green ;
+border-radius: 50%;
+animation: colorspin 4s linear infinite;
+}
+
+@keyframes colorspin{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        border-top-color: orchid;
+        border-bottom-color: rgb(22, 8, 216) ;
+    }
+    50%{
+        transform: rotate(380deg) scale(3.1);
+border-top-color: #1cc41c ;
+border-bottom-color: #1642dd ;
+    }
+    75%{
+        border-top-color: #1642dd ;  
+        border-bottom-color:#1cc41c
+    }
+    100%{
+        transform: rotate(720deg);
+        border-top-color: #1cc41c ;  
+        border-bottom-color:#1642dd
+    }
+}
+
+
+/* div-ball */
+ div{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: red;
+    position: relative;
+    background-color: rgb(240, 255, 30);
+    border: 2px solid yellow;
+}
+
+.ball{
+    animation-name: bounce;
+    animation-duration: 2s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+}
+@keyframes bounce {
+    0%{
+        background-color: orangered;
+    }
+    25% {
+        transform:translateY(20px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    70%{
+        transform: translateY(40px);
+        box-shadow: 0 10px yellowgreen;
+    }
+    100%{
+        transform: translateY(50px);
+        box-shadow: 0 7px #7385ca;
+    }
+}
+
+
+
+/* button */
+button:hover{
+    transform: rotate(65deg);
+}
+/* end of button */
+
+/* div .top .right .down  */
+div {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+   background-color: dodgerblue;
+    color: white;
+}
+
+.top:hover{
+    transform: rotate(45deg);
+       transition-property: font-size background ;
+       transition-duration: 1s, 3s;
+}
+.right:hover{
+transform: translate( );
+transform: scale(1.2);
+transform-origin: 5  ;
+}
+.down:hover{
+transform: rotate(45deg);
+ 
+}
+
+
+/* rainbow */
+p {
+    font-size: 40px;
+    text-align: center;
+animation-name: rainbowtext;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-delay: 5ms;
+animation-iteration-count: infinite ;
+}
+@keyframes rainbowtext{
+0% {
+    color: red;
+    font-size: 50px;
+}
+25% {
+    color: orange;
+}
+50%{
+    color: yellow;
+    font-size: 40px;
+}
+75%{
+    color: green;
+
+}
+85%{
+    color: blue;
+}
+100%{
+    color:purple ;
+    font-size: 30px;
+}
+} 
